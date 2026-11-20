@@ -5,6 +5,7 @@ declare(strict_types=1);
 require_once dirname(__DIR__) . '/src/bootstrap.php';
 
 use App\Config\Env;
+use App\View\TechText;
 
 $cdnUrl = rtrim(Env::get('CDN_URL', ''), '/');
 $modelGlbUrl = Env::get('MODEL_GLB_URL', '/assets/models/tecno-v1.glb');
@@ -79,10 +80,40 @@ $jsAppUrl = $cdnUrl !== '' ? $cdnUrl . '/assets/js/app.js' : '/assets/js/app.js'
     <section id="sec-mapa" class="hero-section">
       <div class="shell">
         <div class="hero-top" data-flow>
-          <div>
-            <h1 class="hero-title">
-              <span class="t-celeste">Campus 3D</span>
-              <span class="t-neon">WiFi · Labs · TI</span>
+          <div class="hero-heading-block">
+            <h1 class="hero-title hero-title-tech">
+              <?= TechText::render([
+                  'lines' => [
+                      ['text' => 'CAMPUS 3D', 'color' => '#22D3EE', 'accentColor' => '#7DD3FC'],
+                      ['text' => 'WIFI · LABS · TI', 'color' => '#FF1E56', 'accentColor' => '#FF6B93'],
+                  ],
+                  'ariaLabel' => 'Campus 3D — WiFi · Labs · TI',
+                  'fontFamily' => "'Outfit', 'Segoe UI', system-ui, sans-serif",
+                  'fontWeight' => 800,
+                  'fontSize' => 76,
+                  'letterSpacing' => -0.025,
+                  'lineHeight' => 1.24,
+                  'edgePadding' => 14,
+                  'align' => 'left',
+                  'reveal' => 'letter',
+                  'dashLength' => 4,
+                  'dashGap' => 2,
+                  'strokeWidth' => 1.5,
+                  'lineStyle' => 'dashed',
+                  'specks' => 15,
+                  'reach' => 200,
+                  'softness' => 0.7,
+                  'speed' => 1,
+                  'bounce' => 0.4,
+                  'selection' => true,
+                  'labels' => true,
+                  'draggable' => true,
+                  'clickKick' => true,
+                  'sweep' => true,
+                  'intro' => 'none',
+                  'introDuration' => 2,
+                  'guides' => false,
+              ]) ?>
             </h1>
             <p class="hero-sub">IESTP Cap. FAP José Abelardo Quiñones — Av. Tumbes Norte N° 1228</p>
           </div>

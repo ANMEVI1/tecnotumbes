@@ -54,6 +54,7 @@ jobs:
             "public/assets/js/glb-engine.js"
             "public/assets/js/motion.js"
             "public/assets/js/qr.js"
+            "public/assets/js/tech-text.js"
             "public/assets/models/manifest.json"
             "public/assets/models/tecno-v1.glb"
           )

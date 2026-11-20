@@ -1,6 +1,7 @@
 import { Campus3D } from './campus3d.js';
 import { initMotion } from './motion.js';
 import { renderWifiQrSvg } from './qr.js';
+import { mountAllTechTexts } from './tech-text.js';
 
 const state = {
   campus: null,
@@ -1535,6 +1536,8 @@ async function openModelManagerModal() {
 }
 
 async function boot() {
+  mountAllTechTexts();
+
   motion = initMotion({
     sections: ['sec-mapa', 'sec-wifi', 'sec-labs', 'sec-carreras', 'sec-ti'],
   });
