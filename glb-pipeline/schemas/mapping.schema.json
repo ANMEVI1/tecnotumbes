@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tecno-tumbes.local/schemas/mapping.schema.json",
+  "title": "TECNO-TUMBES GLB Mapping Configuration",
+  "type": "object",
+  "required": ["thresholds", "pabellonAliases", "landmarks", "ignoreUnmappedPrefixes"],
+  "properties": {
+    "thresholds": {
+      "type": "object",
+      "required": ["maxSizeMB", "warnSizeMB", "maxTriangles", "warnTriangles", "maxMergedDrawCalls", "warnRawMeshes"],
+      "properties": {
+        "maxSizeMB": { "type": "number", "minimum": 0.5 },
+        "warnSizeMB": { "type": "number", "minimum": 0.2 },
+        "maxTriangles": { "type": "integer", "minimum": 1000 },
+        "warnTriangles": { "type": "integer", "minimum": 500 },
+        "maxMergedDrawCalls": { "type": "integer", "minimum": 10 },
+        "warnRawMeshes": { "type": "integer", "minimum": 10 }
+      }
+    },
+    "pabellonAliases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["prefix", "codigo"],
+        "properties": {
+          "prefix": { "type": "string", "minLength": 2 },
+          "codigo": { "type": "string", "pattern": "^[A-Z0-9-]+$" }
+        }
+      }
+    },
+    "landmarks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "ignoreUnmappedPrefixes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

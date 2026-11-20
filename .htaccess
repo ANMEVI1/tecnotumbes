@@ -1,0 +1,17 @@
+# Apache Rewrite Rules for InfinityFree / Shared Hosting
+# Redirects all incoming traffic from root htdocs to /public folder safely
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Prevent directory browsing
+    Options -Indexes
+
+    # Protect sensitive files and directories
+    RewriteRule ^(\.env|\.git|database|src|glb-pipeline|blender-exports)(/.*)?$ - [F,L,NC]
+    RewriteRule \.(blend|blend1|bat|ps1)$ - [F,L,NC]
+
+    # If the request is not already in /public
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

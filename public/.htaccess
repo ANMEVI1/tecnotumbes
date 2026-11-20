@@ -1,0 +1,39 @@
+# Apache configuration for public/ directory (InfinityFree / Laragon)
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Allow CORS for CDN or local API consumers
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Methods "GET, POST, PUT, PATCH, DELETE, OPTIONS"
+        Header set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+    </IfModule>
+
+    # Handle OPTIONS preflight requests
+    RewriteCond %{REQUEST_METHOD} OPTIONS
+    RewriteRule ^(.*)$ $1 [R=200,L]
+
+    # Deliver existing files & directories directly
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Route all other requests (like /api/...) to router.php
+    RewriteRule ^(.*)$ router.php [QSA,L]
+</IfModule>
+
+# MIME types for 3D glTF/GLB models, SVG and modern Web fonts
+<IfModule mod_mime.c>
+    AddType model/gltf-binary .glb
+    AddType model/gltf+json .gltf
+    AddType image/svg+xml .svg
+    AddType font/woff2 .woff2
+    AddType application/javascript .js
+</IfModule>
+
+# Compression for fast delivery
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>

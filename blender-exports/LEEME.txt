@@ -1,0 +1,5 @@
+Carpeta vigilada por el Orquestador GLB (glb-watch.bat).
+
+Exporta tus mejoras desde Blender directamente aquí como archivo .glb
+(ej. tecno-v2.glb) mientras glb-watch.bat esté abierto y se analizará,
+registrará en manifest.json y sincronizará automáticamente con la web.

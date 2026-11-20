@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tecno-tumbes.local/schemas/manifest.schema.json",
+  "title": "TECNO-TUMBES GLB Models Manifest",
+  "type": "object",
+  "required": ["schemaVersion", "active", "updatedAt", "models"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "active": { "type": ["string", "null"] },
+    "updatedAt": { "type": ["string", "null"], "format": "date-time" },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "file", "metaFile", "url", "hash", "sha256", "sizeBytes", "sizeMB", "grade", "stats", "campusBounds", "camera", "groundHitPlane", "registeredAt"],
+        "properties": {
+          "id": { "type": "string" },
+          "file": { "type": "string" },
+          "metaFile": { "type": "string" },
+          "url": { "type": "string" },
+          "hash": { "type": "string", "minLength": 8, "maxLength": 8 },
+          "sha256": { "type": "string", "minLength": 64, "maxLength": 64 },
+          "sizeBytes": { "type": "integer", "minimum": 20 },
+          "sizeMB": { "type": "number" },
+          "grade": { "type": "string", "enum": ["A+", "A", "B", "C", "D"] },
+          "detectedPabellones": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "warnings": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "registeredAt": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  }
+}

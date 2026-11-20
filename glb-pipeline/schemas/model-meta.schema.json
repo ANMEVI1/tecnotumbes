@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tecno-tumbes.local/schemas/model-meta.schema.json",
+  "title": "TECNO-TUMBES Analyzed GLB Model Metadata",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "analyzedAt",
+    "fileName",
+    "sha256",
+    "shortHash",
+    "sizeBytes",
+    "sizeMB",
+    "grade",
+    "blockingErrors",
+    "coordinateSystem",
+    "stats",
+    "campusBounds",
+    "camera",
+    "groundHitPlane",
+    "detectedPabellones",
+    "landmarks",
+    "unmappedGroups"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 2 },
+    "analyzedAt": { "type": "string", "format": "date-time" },
+    "fileName": { "type": "string" },
+    "sha256": { "type": "string" },
+    "shortHash": { "type": "string" },
+    "sizeBytes": { "type": "integer" },
+    "sizeMB": { "type": "number" },
+    "grade": { "type": "string", "enum": ["A+", "A", "B", "C", "D"] },
+    "blockingErrors": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "coordinateSystem": {
+      "type": "object",
+      "required": ["upAxis", "units", "groundY"],
+      "properties": {
+        "upAxis": { "type": "string" },
+        "units": { "type": "string" },
+        "groundY": { "type": "number" }
+      }
+    },
+    "detectedPabellones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["codigo", "min", "max", "size", "center", "roofY", "pisosEstimados", "floorHeights"],
+        "properties": {
+          "codigo": { "type": "string" },
+          "meshCount": { "type": "integer" },
+          "triangles": { "type": "integer" },
+          "min": { "type": "array", "items": { "type": "number" }, "minItems": 3, "maxItems": 3 },
+          "max": { "type": "array", "items": { "type": "number" }, "minItems": 3, "maxItems": 3 },
+          "size": { "type": "array", "items": { "type": "number" }, "minItems": 3, "maxItems": 3 },
+          "center": { "type": "array", "items": { "type": "number" }, "minItems": 3, "maxItems": 3 },
+          "roofY": { "type": "number" },
+          "pisosEstimados": { "type": "integer", "minimum": 1 },
+          "floorHeights": { "type": "array", "items": { "type": "number" } }
+        }
+      }
+    },
+    "landmarks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "meshCount", "min", "max", "size", "center"]
+      }
+    },
+    "unmappedGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["prefix", "meshCount", "triangles", "min", "max", "size", "center"]
+      }
+    }
+  }
+}

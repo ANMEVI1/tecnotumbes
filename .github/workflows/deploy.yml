@@ -1,0 +1,66 @@
+name: Deploy to InfinityFree & Purge jsDelivr CDN
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  deploy-and-purge:
+    name: FTP Deploy (PHP MVC) & CDN Cache Purge
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Clonar Repositorio
+        uses: actions/checkout@v4
+
+      - name: 🚀 Desplegar PHP a InfinityFree via FTP
+        if: "${{ env.FTP_SERVER != '' }}"
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /htdocs/
+          # Excluir git, tests y archivos pesados innecesarios en el servidor gratuito
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/tests/**
+            **/node_modules/**
+            glb-pipeline/**
+            blender-exports/**
+            *.blend
+            *.blend1
+            .env.example
+            DEPLOY_INFINITYFREE.md
+            README.md
+            *.bat
+            *.ps1
+
+      - name: ⚡ Purgar Cache de jsDelivr CDN para Assets y Modelo 3D
+        run: |
+          REPO="${{ github.repository }}"
+          BRANCH="main"
+          echo "Purgando CDN jsDelivr para $REPO en rama $BRANCH..."
+          
+          # Lista de assets estáticos a purgar
+          ASSETS=(
+            "public/assets/css/app.css"
+            "public/assets/js/app.js"
+            "public/assets/js/campus3d.js"
+            "public/assets/js/glb-engine.js"
+            "public/assets/js/motion.js"
+            "public/assets/js/qr.js"
+            "public/assets/models/manifest.json"
+            "public/assets/models/tecno-v1.glb"
+          )
+          
+          for file in "${ASSETS[@]}"; do
+            URL="https://purge.jsdelivr.net/gh/${REPO}@${BRANCH}/${file}"
+            echo "Purgando: $URL"
+            curl -s -X POST "$URL" || true
+          done
+          echo "✅ Purga de CDN jsDelivr completada."

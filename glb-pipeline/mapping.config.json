@@ -1,0 +1,61 @@
+{
+  "thresholds": {
+    "maxSizeMB": 8,
+    "warnSizeMB": 4,
+    "maxTriangles": 150000,
+    "warnTriangles": 60000,
+    "maxMergedDrawCalls": 120,
+    "warnRawMeshes": 400
+  },
+  "pabellonAliases": [
+    { "prefix": "PAB_ADMIN", "codigo": "PAB-ADM" },
+    { "prefix": "PAB_NARANJA", "codigo": "PAB-NAR" },
+    { "prefix": "PAB_U_3P_VERDE", "codigo": "PAB-VER" },
+    { "prefix": "PAB_U_3P", "codigo": "PAB-VER" },
+    { "prefix": "PAB_INTERIOR", "codigo": "PAB-INT" },
+    { "prefix": "PAB_SALUD", "codigo": "PAB-INT" },
+    { "prefix": "PAB_BIBLIO", "codigo": "PAB-BIB" },
+    { "prefix": "PAB_FONDO", "codigo": "PAB-POST" },
+    { "prefix": "AUDITORIO", "codigo": "PAB-AUD" },
+    { "prefix": "TORRE", "codigo": "PAB-TOR" },
+    { "prefix": "LAB_NAVE1", "codigo": "PAB-TAL1" },
+    { "prefix": "TALLER1", "codigo": "PAB-TAL1" },
+    { "prefix": "LAB_NAVE2", "codigo": "PAB-TAL2" },
+    { "prefix": "TALLER2", "codigo": "PAB-TAL2" },
+    { "prefix": "LAB_NAVE3", "codigo": "PAB-TAL3" },
+    { "prefix": "TALLER3", "codigo": "PAB-TAL3" },
+    { "prefix": "CANCHA", "codigo": "PAB-DEP" },
+    { "prefix": "TRIBUNA", "codigo": "PAB-DEP" }
+  ],
+  "landmarks": [
+    "PORTON",
+    "QUINONES",
+    "ALAMEDA",
+    "TERRENO"
+  ],
+  "ignoreUnmappedPrefixes": [
+    "ADOQUIN",
+    "PALMERA",
+    "POSTE",
+    "JARDINERA",
+    "VEREDA",
+    "AREA_",
+    "PASILLO",
+    "PATIO",
+    "AUTO",
+    "TERRENO",
+    "ALAMEDA",
+    "PORTON",
+    "QUINONES",
+    "CERCO",
+    "MURO",
+    "ARBOL",
+    "BANCA",
+    "CALLE",
+    "PISTA",
+    "AVENIDA",
+    "BOLARDO",
+    "BRAZO_LUZ",
+    "CASETA"
+  ]
+}

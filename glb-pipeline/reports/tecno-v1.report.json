@@ -1,0 +1,902 @@
+{
+  "schemaVersion": 2,
+  "analyzedAt": "2026-11-20T19:02:02.974Z",
+  "fileName": "tecno-v1.glb",
+  "sourcePath": "d:\\tecno-tumbes\\tecno-v1.glb",
+  "sha256": "90f77df15c28ce7bcc7e43c86301be9f460ddc123a10800f0655765fe9cb058b",
+  "shortHash": "90f77df1",
+  "sizeBytes": 2798196,
+  "sizeMB": 2.67,
+  "grade": "B",
+  "blockingErrors": [],
+  "coordinateSystem": {
+    "upAxis": "+Y",
+    "units": "meters",
+    "groundY": -0.35
+  },
+  "stats": {
+    "nodesCount": 1497,
+    "rawMeshes": 1497,
+    "rawDrawCalls": 1504,
+    "mergedDrawCalls": 98,
+    "reductionFactor": 15.3,
+    "vertices": 66484,
+    "triangles": 61176,
+    "materialsCount": 28,
+    "texturesCount": 0
+  },
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "unsupportedExtensions": [],
+  "campusBounds": {
+    "min": [
+      -74,
+      -0.35,
+      -136
+    ],
+    "max": [
+      82,
+      18.3,
+      14
+    ],
+    "size": [
+      156,
+      18.65,
+      150
+    ],
+    "center": [
+      4,
+      8.97,
+      -61
+    ]
+  },
+  "camera": {
+    "position": [
+      34.3,
+      95.22,
+      52.95
+    ],
+    "target": [
+      4,
+      4.15,
+      -61
+    ],
+    "minDistance": 12,
+    "maxDistance": 314,
+    "far": 691,
+    "fogDensity": 0.0019
+  },
+  "groundHitPlane": {
+    "centerX": 4,
+    "centerZ": -61,
+    "size": 281
+  },
+  "detectedPabellones": [
+    {
+      "codigo": "PAB-ADM",
+      "meshCount": 35,
+      "triangles": 420,
+      "min": [
+        -42.6,
+        0,
+        -17.1
+      ],
+      "max": [
+        -21.9,
+        5.1,
+        -2.5
+      ],
+      "size": [
+        20.7,
+        5.1,
+        14.6
+      ],
+      "center": [
+        -32.25,
+        2.55,
+        -9.8
+      ],
+      "roofY": 5.1,
+      "pisosEstimados": 1,
+      "floorHeights": [
+        2.55
+      ]
+    },
+    {
+      "codigo": "PAB-AUD",
+      "meshCount": 17,
+      "triangles": 220,
+      "min": [
+        26.9,
+        0,
+        -26.5
+      ],
+      "max": [
+        51.5,
+        9.16,
+        -3.5
+      ],
+      "size": [
+        24.6,
+        9.16,
+        23
+      ],
+      "center": [
+        39.2,
+        4.58,
+        -15
+      ],
+      "roofY": 9.16,
+      "pisosEstimados": 3,
+      "floorHeights": [
+        1.53,
+        4.58,
+        7.63
+      ]
+    },
+    {
+      "codigo": "PAB-DEP",
+      "meshCount": 8,
+      "triangles": 96,
+      "min": [
+        -58,
+        0,
+        -133
+      ],
+      "max": [
+        -16,
+        4.5,
+        -116.8
+      ],
+      "size": [
+        42,
+        4.5,
+        16.2
+      ],
+      "center": [
+        -37,
+        2.25,
+        -124.9
+      ],
+      "roofY": 4.5,
+      "pisosEstimados": 1,
+      "floorHeights": [
+        2.25
+      ]
+    },
+    {
+      "codigo": "PAB-NAR",
+      "meshCount": 151,
+      "triangles": 1812,
+      "min": [
+        -52.1,
+        0,
+        -40.1
+      ],
+      "max": [
+        -9.9,
+        8.3,
+        -16.9
+      ],
+      "size": [
+        42.2,
+        8.3,
+        23.2
+      ],
+      "center": [
+        -31,
+        4.15,
+        -28.5
+      ],
+      "roofY": 8.3,
+      "pisosEstimados": 2,
+      "floorHeights": [
+        2.08,
+        6.23
+      ]
+    },
+    {
+      "codigo": "PAB-POST",
+      "meshCount": 104,
+      "triangles": 1248,
+      "min": [
+        -46.6,
+        0,
+        -118.1
+      ],
+      "max": [
+        -8.9,
+        8.3,
+        -104.5
+      ],
+      "size": [
+        37.7,
+        8.3,
+        13.6
+      ],
+      "center": [
+        -27.75,
+        4.15,
+        -111.3
+      ],
+      "roofY": 8.3,
+      "pisosEstimados": 2,
+      "floorHeights": [
+        2.08,
+        6.23
+      ]
+    },
+    {
+      "codigo": "PAB-TAL1",
+      "meshCount": 143,
+      "triangles": 1732,
+      "min": [
+        8.6,
+        0,
+        -64.2
+      ],
+      "max": [
+        52.43,
+        10.15,
+        -36.8
+      ],
+      "size": [
+        43.83,
+        10.15,
+        27.4
+      ],
+      "center": [
+        30.52,
+        5.08,
+        -50.5
+      ],
+      "roofY": 10.15,
+      "pisosEstimados": 3,
+      "floorHeights": [
+        1.69,
+        5.08,
+        8.46
+      ]
+    },
+    {
+      "codigo": "PAB-TAL2",
+      "meshCount": 143,
+      "triangles": 1732,
+      "min": [
+        8.6,
+        0,
+        -98.2
+      ],
+      "max": [
+        52.43,
+        10.15,
+        -72.8
+      ],
+      "size": [
+        43.83,
+        10.15,
+        25.4
+      ],
+      "center": [
+        30.52,
+        5.08,
+        -85.5
+      ],
+      "roofY": 10.15,
+      "pisosEstimados": 3,
+      "floorHeights": [
+        1.69,
+        5.08,
+        8.46
+      ]
+    },
+    {
+      "codigo": "PAB-TAL3",
+      "meshCount": 11,
+      "triangles": 148,
+      "min": [
+        53.5,
+        0,
+        -70.6
+      ],
+      "max": [
+        70.5,
+        9.95,
+        -41.4
+      ],
+      "size": [
+        17,
+        9.95,
+        29.2
+      ],
+      "center": [
+        62,
+        4.97,
+        -56
+      ],
+      "roofY": 9.95,
+      "pisosEstimados": 3,
+      "floorHeights": [
+        1.66,
+        4.97,
+        8.29
+      ]
+    },
+    {
+      "codigo": "PAB-TOR",
+      "meshCount": 14,
+      "triangles": 168,
+      "min": [
+        53.7,
+        0,
+        -31.3
+      ],
+      "max": [
+        61.3,
+        18.3,
+        -23.7
+      ],
+      "size": [
+        7.6,
+        18.3,
+        7.6
+      ],
+      "center": [
+        57.5,
+        9.15,
+        -27.5
+      ],
+      "roofY": 18.3,
+      "pisosEstimados": 5,
+      "floorHeights": [
+        1.83,
+        5.49,
+        9.15,
+        12.81,
+        16.47
+      ]
+    },
+    {
+      "codigo": "PAB-VER",
+      "meshCount": 335,
+      "triangles": 4020,
+      "min": [
+        -44.6,
+        0,
+        -86.1
+      ],
+      "max": [
+        -9.9,
+        11.85,
+        -44.4
+      ],
+      "size": [
+        34.7,
+        11.85,
+        41.7
+      ],
+      "center": [
+        -27.25,
+        5.92,
+        -65.25
+      ],
+      "roofY": 11.85,
+      "pisosEstimados": 3,
+      "floorHeights": [
+        1.97,
+        5.92,
+        9.88
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "key": "ALAMEDA",
+      "meshCount": 32,
+      "min": [
+        -9.2,
+        0.01,
+        -128
+      ],
+      "max": [
+        9.2,
+        0.09,
+        0
+      ],
+      "size": [
+        18.4,
+        0.08,
+        128
+      ],
+      "center": [
+        0,
+        0.05,
+        -64
+      ]
+    },
+    {
+      "key": "PORTON",
+      "meshCount": 10,
+      "min": [
+        -11.5,
+        0,
+        -87.6
+      ],
+      "max": [
+        48.08,
+        4.4,
+        0.08
+      ],
+      "size": [
+        59.58,
+        4.4,
+        87.68
+      ],
+      "center": [
+        18.29,
+        2.2,
+        -43.76
+      ]
+    },
+    {
+      "key": "QUINONES",
+      "meshCount": 20,
+      "min": [
+        -15.84,
+        3.27,
+        -22.75
+      ],
+      "max": [
+        -15.16,
+        4.13,
+        -22.18
+      ],
+      "size": [
+        0.68,
+        0.86,
+        0.57
+      ],
+      "center": [
+        -15.5,
+        3.7,
+        -22.46
+      ]
+    },
+    {
+      "key": "TERRENO",
+      "meshCount": 1,
+      "min": [
+        -66,
+        -0.3,
+        -136
+      ],
+      "max": [
+        74,
+        0,
+        0
+      ],
+      "size": [
+        140,
+        0.3,
+        136
+      ],
+      "center": [
+        4,
+        -0.15,
+        -68
+      ]
+    }
+  ],
+  "unmappedGroups": [
+    {
+      "prefix": "Letrero_Institucional",
+      "meshCount": 1,
+      "triangles": 15690,
+      "min": [
+        7.83,
+        1.78,
+        0.25
+      ],
+      "max": [
+        21.29,
+        2.66,
+        0.35
+      ],
+      "size": [
+        13.46,
+        0.88,
+        0.1
+      ],
+      "center": [
+        14.56,
+        2.22,
+        0.3
+      ]
+    },
+    {
+      "prefix": "Monumento_Escalon",
+      "meshCount": 14,
+      "triangles": 2058,
+      "min": [
+        -20,
+        0,
+        -22.5
+      ],
+      "max": [
+        -11,
+        1.12,
+        -18
+      ],
+      "size": [
+        9,
+        1.12,
+        4.5
+      ],
+      "center": [
+        -15.5,
+        0.56,
+        -20.25
+      ]
+    },
+    {
+      "prefix": "Monumento_Trasero",
+      "meshCount": 3,
+      "triangles": 588,
+      "min": [
+        -20,
+        0,
+        -27
+      ],
+      "max": [
+        -11,
+        1.12,
+        -22.5
+      ],
+      "size": [
+        9,
+        1.12,
+        4.5
+      ],
+      "center": [
+        -15.5,
+        0.56,
+        -24.75
+      ]
+    },
+    {
+      "prefix": "Mod_Auxiliar",
+      "meshCount": 27,
+      "triangles": 324,
+      "min": [
+        -26.6,
+        0,
+        -102.6
+      ],
+      "max": [
+        -10.5,
+        4.75,
+        -90.4
+      ],
+      "size": [
+        16.1,
+        4.75,
+        12.2
+      ],
+      "center": [
+        -18.55,
+        2.38,
+        -96.5
+      ]
+    },
+    {
+      "prefix": "Lab_Nave4",
+      "meshCount": 11,
+      "triangles": 148,
+      "min": [
+        53.5,
+        0,
+        -105.6
+      ],
+      "max": [
+        70.5,
+        9.95,
+        -78.4
+      ],
+      "size": [
+        17,
+        9.95,
+        27.2
+      ],
+      "center": [
+        62,
+        4.97,
+        -92
+      ]
+    },
+    {
+      "prefix": "Monumento_Mastil",
+      "meshCount": 2,
+      "triangles": 120,
+      "min": [
+        -17.9,
+        1.12,
+        -22.97
+      ],
+      "max": [
+        -13.1,
+        7.52,
+        -22.88
+      ],
+      "size": [
+        4.8,
+        6.4,
+        0.09
+      ],
+      "center": [
+        -15.5,
+        4.32,
+        -22.92
+      ]
+    },
+    {
+      "prefix": "ModTec_Subestacion",
+      "meshCount": 3,
+      "triangles": 36,
+      "min": [
+        25.3,
+        0,
+        -72.4
+      ],
+      "max": [
+        42.7,
+        4.6,
+        -65.3
+      ],
+      "size": [
+        17.4,
+        4.6,
+        7.1
+      ],
+      "center": [
+        34,
+        2.3,
+        -68.85
+      ]
+    },
+    {
+      "prefix": "ModTec_Almacen1",
+      "meshCount": 2,
+      "triangles": 24,
+      "min": [
+        11.3,
+        0,
+        -72.2
+      ],
+      "max": [
+        22.2,
+        4.4,
+        -64.8
+      ],
+      "size": [
+        10.9,
+        4.4,
+        7.4
+      ],
+      "center": [
+        16.75,
+        2.2,
+        -68.5
+      ]
+    },
+    {
+      "prefix": "Monumento_Ala",
+      "meshCount": 2,
+      "triangles": 24,
+      "min": [
+        -19.65,
+        0,
+        -22.55
+      ],
+      "max": [
+        -11.35,
+        0.36,
+        -21.75
+      ],
+      "size": [
+        8.3,
+        0.36,
+        0.8
+      ],
+      "center": [
+        -15.5,
+        0.18,
+        -22.15
+      ]
+    },
+    {
+      "prefix": "Monumento_BaseMastil",
+      "meshCount": 2,
+      "triangles": 24,
+      "min": [
+        -17.97,
+        1.12,
+        -23.04
+      ],
+      "max": [
+        -13.03,
+        1.47,
+        -22.8
+      ],
+      "size": [
+        4.94,
+        0.35,
+        0.24
+      ],
+      "center": [
+        -15.5,
+        1.29,
+        -22.92
+      ]
+    },
+    {
+      "prefix": "ModTec_CasetaEste",
+      "meshCount": 1,
+      "triangles": 12,
+      "min": [
+        45,
+        0,
+        -71.5
+      ],
+      "max": [
+        50.5,
+        4.8,
+        -66
+      ],
+      "size": [
+        5.5,
+        4.8,
+        5.5
+      ],
+      "center": [
+        47.75,
+        2.4,
+        -68.75
+      ]
+    },
+    {
+      "prefix": "Monumento_Muro",
+      "meshCount": 1,
+      "triangles": 12,
+      "min": [
+        -18.85,
+        0.36,
+        -23.35
+      ],
+      "max": [
+        -12.15,
+        1.12,
+        -22.5
+      ],
+      "size": [
+        6.7,
+        0.76,
+        0.85
+      ],
+      "center": [
+        -15.5,
+        0.74,
+        -22.93
+      ]
+    },
+    {
+      "prefix": "Monumento_Pedestal",
+      "meshCount": 1,
+      "triangles": 12,
+      "min": [
+        -15.84,
+        1.12,
+        -22.84
+      ],
+      "max": [
+        -15.16,
+        3.27,
+        -22.16
+      ],
+      "size": [
+        0.68,
+        2.15,
+        0.68
+      ],
+      "center": [
+        -15.5,
+        2.2,
+        -22.5
+      ]
+    }
+  ],
+  "unappliedScaleCount": 0,
+  "warnings": [
+    "Alta densidad poligonal (61,176 triángulos).",
+    "1497 objetos separados en Blender; en runtime se fusionan a 98 draw calls.",
+    "Prefijos nuevos sin mapear a pabellón: Letrero_Institucional, Monumento_Escalon, Monumento_Trasero, Mod_Auxiliar, Lab_Nave4, Monumento_Mastil"
+  ],
+  "recommendations": [
+    "Aplica Decimate / simplifica detalles repetitivos (adoquines, celosías) en Blender.",
+    "En Blender puedes unir mallas estáticas por material (Ctrl+J) para acelerar la carga inicial.",
+    "Revisa unmappedGroups[]. Si son edificios nuevos, mapéalos en glb-pipeline/mapping.config.json."
+  ],
+  "pabellonAliases": [
+    {
+      "prefix": "PAB_ADMIN",
+      "codigo": "PAB-ADM"
+    },
+    {
+      "prefix": "PAB_NARANJA",
+      "codigo": "PAB-NAR"
+    },
+    {
+      "prefix": "PAB_U_3P_VERDE",
+      "codigo": "PAB-VER"
+    },
+    {
+      "prefix": "PAB_U_3P",
+      "codigo": "PAB-VER"
+    },
+    {
+      "prefix": "PAB_INTERIOR",
+      "codigo": "PAB-INT"
+    },
+    {
+      "prefix": "PAB_SALUD",
+      "codigo": "PAB-INT"
+    },
+    {
+      "prefix": "PAB_BIBLIO",
+      "codigo": "PAB-BIB"
+    },
+    {
+      "prefix": "PAB_FONDO",
+      "codigo": "PAB-POST"
+    },
+    {
+      "prefix": "AUDITORIO",
+      "codigo": "PAB-AUD"
+    },
+    {
+      "prefix": "TORRE",
+      "codigo": "PAB-TOR"
+    },
+    {
+      "prefix": "LAB_NAVE1",
+      "codigo": "PAB-TAL1"
+    },
+    {
+      "prefix": "TALLER1",
+      "codigo": "PAB-TAL1"
+    },
+    {
+      "prefix": "LAB_NAVE2",
+      "codigo": "PAB-TAL2"
+    },
+    {
+      "prefix": "TALLER2",
+      "codigo": "PAB-TAL2"
+    },
+    {
+      "prefix": "LAB_NAVE3",
+      "codigo": "PAB-TAL3"
+    },
+    {
+      "prefix": "TALLER3",
+      "codigo": "PAB-TAL3"
+    },
+    {
+      "prefix": "CANCHA",
+      "codigo": "PAB-DEP"
+    },
+    {
+      "prefix": "TRIBUNA",
+      "codigo": "PAB-DEP"
+    }
+  ]
+}
